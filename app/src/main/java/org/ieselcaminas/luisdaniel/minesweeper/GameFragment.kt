@@ -48,8 +48,21 @@ class GameFragment : Fragment() {
 
         //////////////////////////////////
 
+        createButtons() //creates the array of buttons
+        binding.gridLayout.columnCount = numCols //grid con el nº exacto de columnas especificado
+        binding.gridLayout.rowCount = numRows
 
-        createButtons()
+        for(row in 0 until numRows){
+            for (col in 0 until numCols){
+                binding.gridLayout.addView(board[row][col])
+                board[row][col].setOnClickListener(){
+                    Toast.makeText(context, "row: ${board[row][col].row} col: ${board[row][col].col}",Toast.LENGTH_SHORT).show()
+                }
+            }
+        }
+
+
+
 
 
         return binding.root
