@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">MineSweeper</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="youWonString">\"You won!\"</string>
+    <string name="youLoseString">\"You lose!\"</string>
+    <string name="size">Final selection: %1$d X %2$d</string>
+
+    <string name="share_success_text">I won bitch!</string>
+    <string name="submit_button">Submit</string>
+    <string name="congratulations">Congratulations!</string>
+    <string name="share">Share</string>
+    <string name="sharing_not_available">Sharing Not Available</string>
+</resources>

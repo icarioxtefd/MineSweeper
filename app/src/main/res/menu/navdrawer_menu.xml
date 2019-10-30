@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- el id del item sera hacia donde se ira al hacer clic en el; es el nombre del navGraph -->
+    <item
+        android:id="@+id/aboutFrag"
+        android:icon="@drawable/whywontuworkfkingpicture"
+        android:title="About"
+        />
+
+
+</menu>

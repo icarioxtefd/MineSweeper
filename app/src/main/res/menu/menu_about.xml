@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <!-- para añadir del menu para ir a frags, el id tiene que ser igual al frag al que ha de ir -->
+
+    <item
+        android:id="@+id/aboutFrag"
+        android:enabled="true"
+        android:title="About"
+        android:visible="true"
+        app:showAsAction="never" />
+
+</menu>
