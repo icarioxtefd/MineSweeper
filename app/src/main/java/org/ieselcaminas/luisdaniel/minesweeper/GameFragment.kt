@@ -19,9 +19,11 @@ class GameFragment : Fragment() {
 
     lateinit var board: List<List<MineButton>> //instantiation of 2d object matrix
             //= List(height) { i -> List(width) { j -> IndexedTile(i, j, Tile()) } }
+    lateinit var bombMatrix: BombMatrix
 
     var numRows: Int = 0
     var numCols: Int = 0
+    var mineCount: Int = 0
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -41,8 +43,9 @@ class GameFragment : Fragment() {
 
         var args = GameFragmentArgs.fromBundle(arguments!!)
 
-        numRows = args.numRows
+        numRows = args.numRows //I messed it up kay don't judge me
         numCols = args.numCols
+        mineCount = (args.numRows * args.numCols) / 6
 
         Toast.makeText(context, "Rows: $numRows Cols $numCols", Toast.LENGTH_SHORT).show()
 
@@ -61,6 +64,8 @@ class GameFragment : Fragment() {
             }
         }
 
+        bombMatrix = BombMatrix(numRows, numCols, mineCount) //instantiation
+        bombMatrix.printMatrix()
 
 
 

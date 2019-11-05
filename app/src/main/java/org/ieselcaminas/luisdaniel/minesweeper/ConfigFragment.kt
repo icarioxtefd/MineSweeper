@@ -24,8 +24,8 @@ import java.lang.NumberFormatException
 class ConfigFragment : Fragment() {
 
     data class ConfigData(
-        var cols: Int,
-        var rows: Int
+        var rows: Int,
+        var cols: Int
     )
 
 
@@ -46,8 +46,9 @@ class ConfigFragment : Fragment() {
             //this  ->  Navigation.findNavController(it).navigate(R.id.action_configFragment_to_gameFragment)   <- is the same as below
             it.findNavController().navigate(
                 ConfigFragmentDirections.actionConfigFragmentToGameFragment(
-                    config.cols,
-                    config.rows
+                    config.rows,
+                    config.cols
+
                 )
             ) //   <-- safeArgs
         }
