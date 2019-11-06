@@ -60,7 +60,7 @@ class MineButton(context: Context, var row: Int, var col: Int) : ImageButton(con
                     button.setImageDrawable(null)
                 }
             }
-            false
+            true
         }
 
 
